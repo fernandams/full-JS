@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img-in-text {
+            width: 50px;
+            height: 44px;
+        }
+
+        .vermelho {
+            font-size: 24px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+          <li><a href="#">Página inicial</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+      
+    <h1>Cabeçalho</h1>
+    <p><b>Lorem</b>, <strong>ipsum</strong> <i>dolor</i> <em>sit</em>
+        <a href="http://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong" target="_blank">amet</a>
+        <a href="http://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong" target="_blank">
+            <img class="img-in-text" src="https://seeklogo.com/images/M/mdn-logo-6DB9B0093F-seeklogo.com.png"
+                alt="Logo da MDN"></a>
+        <del>vermelho</del> <ins>azul</ins> <s>consectetur</s> <u>adipisicing</u> elit. Facere quod suscipit, corrupti
+        fuga autem iste beatae iusto sint quae modi tenetur
+        <small> voluptatum </small> optio 2<sup>2</sup> odio H<sub>2</sub>O, hic sequi dolore dolorem!
+    </p>
+
+    <h1>Cabeçalho</h1>
+    <p><span class="vermelho">Lorem</span>, ipsum dolor sit amet consectetur <span class="vermelho">adipisicing</span>
+        elit.<br> Facere quod suscipit, corrupti fuga autem iste
+        beatae
+        iusto sint quae modi tenetur <br> <q
+            cite="http://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong">voluptatum</q> optio culpa odio
+        quibusdam, <code>console.log</code> hic sequi dolore dolorem!</p>
+
+    <hr>
+
+    <blockquote cite="http://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong">
+        <p>Aqui sim estou fazendo um bloco de citação.</p>
+    </blockquote>
+
+    <pre><code>const inputsFormulario = document.querySelectorAll(".input");
+const form = document.getElementById("form");
+
+inputsFormulario.forEach((input) => {
+const campoOb = document.createElement("span");
+campoOb.className = "campo-ob";
+input.insertAdjacentElement("afterend", campoOb);
+});
+
+form.addEventListener("submit", (e) => {
+let valido = true;
+inputsFormulario.forEach((input) => {
+    const campoOb = input.nextElementSibling;
+    if (!input.value) {
+    input.classList.add("invalido");
+    campoOb.textContent = "campo obrigatório";
+    valido = false;
+    } else {
+    input.classList.remove("invalido");
+    campoOb.textContent = "";
+    }
+});
+
+if (!valido) {
+    e.preventDefault();
+}
+});</code></pre>
+
+    <div class="vermelho">Eu sou um bloco.</div>
+
+</body>
+
+</html>

@@ -23,6 +23,22 @@
     color: green;
 }
 
+[meu-atributo |="qualquercoisa"] {
+    color: orange;
+} 
+
+[meu-atributo ^="comeco"] {
+    color: purple;
+} 
+
+[meu-atributo $="fim"] {
+    color: brown;
+} 
+
+[meu-atributo *="c qual"] {
+    color: palevioletred;
+} 
+
 [checked] {
     width: 50px;
     height: 50px;

@@ -69,3 +69,35 @@ input:required {
 hr~p:not(.meio) {
     color: blue;
 }
+
+hr+ul li:nth-child(odd) {
+    background-color: rebeccapurple;
+}
+
+hr+ul li:nth-child(even) {
+    background-color: darkturquoise;
+}
+
+hr+ul li:nth-child(3n) {
+    background-color: darkolivegreen;
+}
+
+hr+ul li:nth-child(3n+10) {
+    background-color: darkred;
+}
+
+div p:nth-child(odd) {
+    background-color: rebeccapurple;
+}
+
+div p:nth-child(even) {
+    background-color: darkturquoise;
+}
+
+div p:nth-child(3n) {
+    background-color: darkolivegreen;
+}
+
+div p:nth-child(3n+10) {
+    background-color: darkred;
+}

@@ -50,13 +50,22 @@ input:checked+p {
     background: red;
 }
 
+input:not(:checked)+p {
+    background: yellow;
+}
+
 .pai .lista li:first-child {
     background: rosybrown;
 }
+
 .pai .lista li:last-child {
     background: red;
 }
 
 input:required {
     background: red;
+}
+
+hr~p:not(.meio) {
+    color: blue;
 }

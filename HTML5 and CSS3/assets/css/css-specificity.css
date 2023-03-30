@@ -1,0 +1,30 @@
+/*
+ID          Classes, atributos e pseudo-classes            Elementos e pseudo-elementos 
+1           0                                              0
+0           1                                              0
+1           1                                              0
+
+Regra de aplicação do CSS: 
+especificidade
+empate
+style
+!important
+
+especificidade < style < !important
+*/
+
+body#b.bclass p#p.p {
+    background: purple;
+}
+
+p {
+    background: blue !important;
+}
+
+#p {
+    background: green;
+}
+
+#p.p {
+    background: yellow;
+}

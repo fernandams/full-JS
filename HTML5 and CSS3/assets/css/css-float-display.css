@@ -10,7 +10,6 @@
 
 .grid .col {
     /* display: inline-block; */
-    width: 33.33%;
     height: 300px;
     float: left;
     padding: 15px;
@@ -26,12 +25,35 @@
     width: 100%;
     height: 100%;
     /* background: red; */
-    /* background: #ABC; */ 
+    /* background: #ABC; */
     /* background: #abc123; */
     /* background: rgb(255, 93, 93); */
     /* background: #3526a756; */
     /* background: rgba(0, 0, 0, 0.3); */
     /* background: hsl(300, 76%, 72%); */
-    background: hsla(300, 76%, 72%,0.4);
+    background: hsla(300, 76%, 72%, 0.4);
 }
 
+@media all and (max-width: 568px) {
+    .grid .col {
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 569px) and (max-width: 768px) {
+    .grid .col {
+        width: 50%;
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 1200px) {
+    .grid .col {
+        width: 33.33%;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .grid .col {
+        width: 25%;
+    }
+}

@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #b3d4fc;;
+    height: 500px;
+}
+
+.flex-item {
+    color: #fff;
+    background: #4E50BF;
+    margin: 10px;
+}
+
+.flex-item:nth-child(3) {
+    font-size: 40px;
+}

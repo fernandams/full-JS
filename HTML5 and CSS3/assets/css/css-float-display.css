@@ -43,6 +43,7 @@ body {
     /* background: rgba(0, 0, 0, 0.3); */
     /* background: hsl(300, 76%, 72%); */
     background: hsla(300, 76%, 72%, 0.4);
+    border-radius: 50%;
 }
 
 .menu {

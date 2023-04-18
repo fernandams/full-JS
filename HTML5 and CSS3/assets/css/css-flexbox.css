@@ -6,22 +6,17 @@
 
 .flex-container {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    /* align-content: center; */
+    justify-content: space-between;
+    flex-flow: row wrap;
     background: #b3d4fc;;
-    height: 640px;
 }
 
 .flex-item {
-    width: 33.33%;
+    /* flex-grow: 1;
+    flex-basis: 320px;
+    flex-shrink: 1; */
+    flex: 1 1 320px;
+    height: 200px;
     color: #fff;
     background: #4E50BF;
-    /* margin: 10px; */
 }
-
-/* .flex-item:nth-child(3) {
-    font-size: 40px;
-} */

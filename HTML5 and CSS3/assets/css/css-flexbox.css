@@ -6,19 +6,22 @@
 
 .flex-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* align-content: center; */
     background: #b3d4fc;;
-    height: 500px;
+    height: 640px;
 }
 
 .flex-item {
+    width: 33.33%;
     color: #fff;
     background: #4E50BF;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
-.flex-item:nth-child(3) {
+/* .flex-item:nth-child(3) {
     font-size: 40px;
-}
+} */

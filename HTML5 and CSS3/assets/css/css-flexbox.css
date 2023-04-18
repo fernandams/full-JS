@@ -7,16 +7,39 @@
 .flex-container {
     display: flex;
     justify-content: space-between;
-    flex-flow: row wrap;
-    background: #b3d4fc;;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+    background: #b3d4fc;
+    height: 600px;
 }
 
 .flex-item {
-    /* flex-grow: 1;
-    flex-basis: 320px;
-    flex-shrink: 1; */
-    flex: 1 1 320px;
-    height: 200px;
+    width: 100%;
     color: #fff;
     background: #4E50BF;
+}
+
+.flex-item:nth-child(3) {
+    align-self: flex-end;
+}
+
+.flex-item:nth-child(4) {
+    align-self: center;
+}
+
+.flex-item:nth-child(2) {
+    align-self: stretch;
+}
+
+.flex-item:nth-child(1) {
+    order: -3;
+}
+.flex-item:nth-child(2) {
+    order: -4;
+}
+.flex-item:nth-child(3) {
+    order: -1;
+}
+.flex-item:nth-child(4) {
+    order: -2;
 }

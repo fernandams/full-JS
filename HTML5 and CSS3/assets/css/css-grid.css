@@ -27,7 +27,9 @@ body {
         [dois] 1fr 
         [tres] 1fr 
         [quatro];
-    gap: 30px;
+    /* gap: 30px; */
+    row-gap: 30px;
+    column-gap: 80px;
 }
 
 .grid div {

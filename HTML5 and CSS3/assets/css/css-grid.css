@@ -17,8 +17,16 @@ body {
     /* grid-template-columns: 1fr 1fr 1fr 1fr 5fr 1fr 1fr 1fr 1fr; */
     /* grid-template-columns: repeat(3, 1fr 2fr); */
     /* grid-template-columns: repeat(3, 1fr);  */
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); */
+    grid-template-columns: [um] 1fr 
+        [dois] 1fr 
+        [tres] 1fr 
+        [quatro];
     /* grid-template-rows: repeat(2, 1fr 2fr); */
+    grid-template-rows: [um] 1fr 
+        [dois] 1fr 
+        [tres] 1fr 
+        [quatro];
     gap: 30px;
 }
 
@@ -33,12 +41,18 @@ body {
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 6; */
-    grid-row: span 2;
-    grid-column: span 2;
-}
+    /* grid-row: span 2;
+    grid-column: span 2; */
+    /* grid-column-start: um;
+    grid-column-end: quatro; */
+    /* grid-column: span 2 / 4;
+    grid-row: um / quatro; */
+    grid-area: um / dois / quatro / quatro;
 
+}
+/* 
 @media (max-width: 768px) {
     .grid div:nth-child(5) {
         grid-column: span 1;
     }
-}
+} */

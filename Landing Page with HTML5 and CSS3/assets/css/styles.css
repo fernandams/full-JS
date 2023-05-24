@@ -5,7 +5,7 @@
     grid-template-columns: 1fr 1.5fr;
     align-items: stretch;
     gap: var(--gap);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .intro-text-content,
@@ -15,7 +15,8 @@
     justify-content: center;
 }
 
-.intro-img img {
+.intro-img img,
+.intro-img svg {
     max-width: 100%;
     height: auto;
 }
@@ -23,7 +24,8 @@
 .top3-content {
     max-width: 64rem;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
     height: 100vh;
     text-align: center;
@@ -33,7 +35,7 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .grid-main-heading {

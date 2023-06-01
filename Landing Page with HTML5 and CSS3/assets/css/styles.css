@@ -211,6 +211,12 @@
         left: -1rem;
     }
 
+    .form-group input,
+    .form-group textarea,
+    .form-group button {
+        font-size: 2.5rem;
+    }
+
     .menu {
         bottom: 0;
         text-align: center;
@@ -257,5 +263,9 @@
 
     .menu-spacing {
         display: none;
+    }
+
+    .footer {
+        font-size: 1.3rem;
     }
 }

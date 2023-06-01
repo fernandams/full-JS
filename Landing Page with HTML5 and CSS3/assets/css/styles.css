@@ -205,6 +205,12 @@
         display: block;
     }
 
+    .grid h3::before {
+        font-size: 7rem;
+        top: -3rem;
+        left: -1rem;
+    }
+
     .menu {
         bottom: 0;
         text-align: center;

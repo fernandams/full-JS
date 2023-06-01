@@ -91,3 +91,10 @@ table th,
 tfoot td {
     background: var(--light-gray-color);
 }
+
+
+@media (max-width: 800px) {
+    h2 {
+        font-size: 5rem;
+    }
+}

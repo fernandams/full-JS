@@ -12,7 +12,7 @@ function soma(x,y) {
     if (typeof x !== 'number' || typeof y !== 'number') {
         // throw('x e y precisam ser números.');
         // throw new ReferenceError('x e y precisam ser números.');
-        throw new Error('x e y precisam ser números.'); // esses erros são para o desenvolvedor entender qual tipo de erro que ocorreu
+        throw new Error('x e y precisam ser números.'); // esses erros são lançados para o desenvolvedor entender qual tipo de erro que ocorreu
     }
 
     return x + y;
